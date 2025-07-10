@@ -1,0 +1,50 @@
+{
+  "Power Menu": [
+    {
+      "name": "Shutdown",
+      "exec": "shutdown -P now",
+      "description": "System shutdown.",
+      "keywords": "Power off, Shutdown, Turn off.",
+      "icon": "/home/jorink/pics/ss.png"
+    },
+    {
+      "name": "Sleep",
+      "exec": "shutdown -H now",
+      "description": "System sleep.",
+      "keywords": "Sleep, Snooze, Pause, Idle.",
+      "icon": "/home/jorink/pics/ss.png"
+    },
+    {
+      "name": "Reboot",
+      "exec": "shutdown -r now",
+      "description": "System reboot.",
+      "keywords": "Restart, Power reset, Turn Off then On.",
+      "icon": "/home/jorink/pics/ss.png"
+    },
+    {
+      "name": "List scheduled shutdown.",
+      "exec": "shutdown --show",
+      "description": "List all pending shutdowns if any.",
+      "keywords": "Shutdown plans, Power Off schedule.",
+      "icon": "/home/jorink/pics/ss.png",
+      "terminal": true
+    }
+  ],
+  "System": [
+    {
+      "name": " Scan for Wifi.",
+      "exec": "iwctl station wlan0 scan",
+      "description": "Scan for Wifi network. Will auto connect to known network."
+    },
+    {
+      "name": " Light theme.",
+      "exec": "/home/jorink/.config/jiffy/changeDesktopTheme.sh _ light",
+      "description": "Enable light mode system wide."
+    },
+    {
+      "name": " Dark theme.",
+      "exec": "/home/jorink/.config/jiffy/changeDesktopTheme.sh _ dark",
+      "description": "Enable dark mode system wide."
+    }
+  ]
+}

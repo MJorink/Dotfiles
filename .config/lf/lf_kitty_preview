@@ -1,0 +1,22 @@
+#!/bin/sh
+
+file=$1
+w=$2
+h=$3
+x=$4
+y=$5
+case "$1" in
+*.tar*) tar tf "$1" ;;
+*.zip) unzip -l "$1" ;;
+*.rar) unrar l "$1" ;;
+*.7z) 7z l "$1" ;;
+*.pdf) less "$1" ;;
+*.png) kitty icat --clear --stdin=no --transfer-mode=file --place "${w}x${h}@${x}x${y}" "$1" >/dev/tty ;;
+*.jpg) kitty icat --clear --stdin=no --transfer-mode=file --place "${w}x${h}@${x}x${y}" "$1" >/dev/tty ;;
+*.jpeg) kitty icat --clear --stdin=no --transfer-mode=file --place "${w}x${h}@${x}x${y}" "$1" >/dev/tty ;;
+*.webp) kitty icat --clear --stdin=no --transfer-mode=file --place "${w}x${h}@${x}x${y}" "$1" >/dev/tty ;;
+*.md) cat "$1" | glow ;;
+*)
+  bat --wrap=auto --color=always -p --theme=base16 --italic-text=always --terminal-width "$((w - 5))" "$1"
+  ;;
+esac
