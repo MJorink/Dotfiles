@@ -9,6 +9,7 @@ sleep 2
 sudo cp -r .config $HOME/
 sudo cp -r .cache $HOME/
 sudo cp -r pics $HOME/
+sudo cp -r .scripts $HOME/
 
 echo Done. Goodbye!
 echo ...
