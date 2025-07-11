@@ -1,4 +1,4 @@
-echo Jorink's Dotfiles Update script
+echo "Jorink's Dotfiles Update script"
 echo ...
 
 
@@ -19,6 +19,13 @@ sudo cp -r .config $HOME/
 sudo cp -r .cache $HOME/
 sudo cp -r pics $HOME/
 sudo cp -r .scripts $HOME/
+
+echo Removing leftover files
+echo ...
+sleep 2
+
+sudo rm -r Dotfiles
+
 
 echo Done. Goodbye!
 echo ...
