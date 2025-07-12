@@ -1,6 +1,7 @@
 fastfetch
 
 alias ls='ls -a'
+alias yay='yay --noconfirm'
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
