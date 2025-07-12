@@ -2,7 +2,7 @@ echo "Jorink's Dotfiles Update script"
 echo ...
 
 
-sudo "echo Removing old leftover files if present"
+sudo echo "Removing old leftover files if present"
 echo ...
 sleep 2
 
