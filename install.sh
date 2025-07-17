@@ -1,4 +1,4 @@
-echo Jorink's Dots Install script
+echo ¨Jorink's Dots Install script"
 echo ...
 sleep 2
 
