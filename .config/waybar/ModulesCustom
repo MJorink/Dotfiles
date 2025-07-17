@@ -165,8 +165,8 @@
 // Other Distro dont have notifications but can use to check for update for any other distro
 "custom/updater": {
 	"format": " {}",
-	"exec": "checkupdates | wc -l",
-	"exec-if": "[[ $(checkupdates | wc -l) ]]",
+	"exec": "yay | wc -l",
+	"exec-if": "[[ $(yay | wc -l) ]]",
 	"interval": 43200, // (Arch Linux will try to check 12 hrs interval only
 	"on-click": "$HOME/.scripts/OS-Update.sh",
 	"tooltip": false,
